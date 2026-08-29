@@ -6,10 +6,10 @@
     <title>Nature's Platter</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="max-w-375 mx-auto">
-    <header>
+  <body>
+    <header class="bg-[#f1eee7]">
       <!-- Hero Navbar Section -->
-      <nav class="flex justify-between items-center h-21">
+      <nav class="flex justify-between items-center h-21 max-w-375 mx-auto">
         <img class="h-14 cursor-pointer" src="./assets/nav-logo.png" alt="" />
         <ul class="flex gap-15 items-center">
           <li class="cursor-pointer">Product</li>
@@ -42,7 +42,7 @@
       </nav>
 
       <!-- Intro Section -->
-      <section class="pt-5">
+      <section class="pt-5 max-w-375 mx-auto">
         <div class="text-center max-w-175 mx-auto">
           <p class="text-5xl font-medium">
             Freshness
@@ -65,152 +65,242 @@
     </header>
 
     <!-- Services Section -->
-    <section class="mt-20">
-        <p class="text-3xl font-medium pb-10">Services</p>
-        <div class="flex justify-center gap-15">
-            <div class="bg-[#D9D9D9] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl">
-                <img class="bg-white rounded-full h-30 p-3 object-cover" src="./assets/service.png" alt="">
-                <p class="pt-4 text-xl font-medium">24/7 Services</p>
-                <p class="pt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quae laboriosam.</p>
-            </div>
-            <div class="bg-[#EFEBE3] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl">
-                <img class="bg-white rounded-full h-30 p-3 object-cover" src="./assets/delivery.png" alt="">
-                <p class="pt-4 text-xl font-medium">Fast Delivery</p>
-                <p class="pt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quae laboriosam.</p>
-            </div>
-            <div class="bg-[#EFEBE3] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl">
-                <img class="bg-white rounded-full h-30 p-3 object-cover" src="./assets/products.png" alt="">
-                <p class="pt-4 text-xl font-medium">Healthy products</p>
-                <p class="pt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quae laboriosam.</p>
-            </div>
+    <section class="mt-20 max-w-375 mx-auto">
+      <p class="text-3xl font-medium pb-10">Services</p>
+      <div class="flex justify-center gap-15">
+        <div
+          class="bg-[#D9D9D9] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl"
+        >
+          <img
+            class="bg-white rounded-full h-30 p-3 object-cover"
+            src="./assets/service.png"
+            alt=""
+          />
+          <p class="pt-4 text-xl font-medium">24/7 Services</p>
+          <p class="pt-3 text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum quae laboriosam.
+          </p>
         </div>
+        <div
+          class="bg-[#EFEBE3] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl"
+        >
+          <img
+            class="bg-white rounded-full h-30 p-3 object-cover"
+            src="./assets/delivery.png"
+            alt=""
+          />
+          <p class="pt-4 text-xl font-medium">Fast Delivery</p>
+          <p class="pt-3 text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum quae laboriosam.
+          </p>
+        </div>
+        <div
+          class="bg-[#EFEBE3] h-80 w-full p-8 flex flex-col justify-center items-center rounded-2xl"
+        >
+          <img
+            class="bg-white rounded-full h-30 p-3 object-cover"
+            src="./assets/products.png"
+            alt=""
+          />
+          <p class="pt-4 text-xl font-medium">Healthy products</p>
+          <p class="pt-3 text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum quae laboriosam.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Popular Products Section -->
-    <section class="mt-20">
-        <p class="text-3xl font-medium pb-10 text-green-400">Popular Products</p>
-        <div class="flex gap-9">
-            <div class="h-80 w-100 pt-7 pl-7 bg-linear-to-br from-green-500 to-transparent rounded-2xl">
-                <p class="text-2xl font-medium">30<span class="text-white">% Off</span></p>
-                <p class="pt-4 pb-4">Discover a world of treats, toys, and essentials handpicked for </p>
-                <button class="w-24 h-8 text-black bg-white rounded-lg cursor-pointer">Buy Now</button>
-                <img class="-mt-51.5 pointer-events-none" src="./assets/Mask group.png" alt="">
-            </div>
-            <div class="grid grid-cols-3 gap-x-8 gap-y-4 w-5xl">
-                <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/onion.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Onion 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/tomato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Tomato 500g</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/potato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Potato 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/tomato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Tomato 500g</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/onion.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Onion 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/tomato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Tomato 500g</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/onion.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Onion 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/potato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Potato 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
-                    <img class="h-18" src="./assets/potato.png" alt="">
-                    <div>
-                        <p>4.5</p>
-                        <p class="">Potato 1Kg</p>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-                
-            </div>
+    <section class="mt-20 max-w-375 mx-auto">
+      <p class="text-3xl font-medium pb-10 text-green-400">Popular Products</p>
+      <div class="flex justify-between">
+        <div
+          class="h-80 w-100 pt-7 pl-7 bg-linear-to-br from-green-500 to-transparent rounded-2xl"
+        >
+          <p class="text-2xl font-medium">
+            30<span class="text-white">% Off</span>
+          </p>
+          <p class="pt-4 pb-4">
+            Discover a world of treats, toys, and essentials handpicked for
+          </p>
+          <button
+            class="w-24 h-8 text-black bg-white rounded-lg cursor-pointer"
+          >
+            Buy Now
+          </button>
+          <img
+            class="-mt-51.5 pointer-events-none"
+            src="./assets/Mask group.png"
+            alt=""
+          />
         </div>
+        <div class="grid grid-cols-3 gap-x-8 gap-y-4 w-5xl">
+          <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/onion.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Onion 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/tomato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Tomato 500g</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/potato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Potato 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/tomato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Tomato 500g</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/onion.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Onion 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#ffa494] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/tomato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Tomato 500g</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#e2d5c2] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/onion.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Onion 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/potato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Potato 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-[#fffb95] p-3 w-full rounded-2xl">
+            <img class="h-18" src="./assets/potato.png" alt="" />
+            <div>
+              <p>4.5</p>
+              <p class="">Potato 1Kg</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Arrival & Offer -->
-     <section class="mt-20">
-        <p class="text-3xl font-medium pb-10 text-green-400">Arrival & Offer</p>
-        <div class="flex gap-25">
-
-          <div class="flex justify-between h-70 w-2xl bg-green-800 pl-10 pt-5 rounded-2xl">
-            <div>
-              <img class="pt-8" src="./assets/dawat-logo.png" alt="">
-              <p class="w-60 h-12 text-xl bg-green-400 text-center mt-6 pt-2 rounded-2xl text-white font-medium">Cook Exotic Dishes</p>
-              <p class="text-white text-2xl pt-5 pl-7">UpTo <span class="font-bold">20% OFF</span></p>
-            </div>
-            <img src="./assets/offers-1.png" alt="">
+    <section class="mt-20 max-w-375 mx-auto">
+      <p class="text-3xl font-medium pb-10 text-green-400">Arrival & Offer</p>
+      <div class="flex justify-between">
+        <div
+          class="flex justify-between h-70 w-2xl bg-green-800 pl-10 pt-5 rounded-2xl"
+        >
+          <div>
+            <img class="pt-8" src="./assets/dawat-logo.png" alt="" />
+            <p
+              class="w-60 h-12 text-xl bg-green-400 text-center mt-6 pt-2 rounded-2xl text-white font-medium"
+            >
+              Cook Exotic Dishes
+            </p>
+            <p class="text-white text-2xl pt-5 pl-7">
+              UpTo <span class="font-bold">20% OFF</span>
+            </p>
           </div>
+          <img src="./assets/offers-1.png" alt="" />
+        </div>
 
-          <div class="flex gap-40 h-70 w-2xl bg-blue-900 pl-10 pt-5 rounded-2xl">
-            <div>
-              <img class="" src="./assets/gate-logo.png" alt="">
-              <p class="w-60 h-12 text-xl bg-blue-400 text-center mt-1 pt-2 rounded-2xl text-white font-medium">World's No. 1 Rice</p>
-              <p class="text-white text-2xl pt-5 pl-7">UpTo <span class="font-bold">40% OFF</span></p>
-            </div>
-            <img src="./assets/offers-2.png" alt="">
+        <div class="flex gap-40 h-70 w-2xl bg-blue-900 pl-10 pt-5 rounded-2xl">
+          <div>
+            <img class="" src="./assets/gate-logo.png" alt="" />
+            <p
+              class="w-60 h-12 text-xl bg-blue-400 text-center mt-1 pt-2 rounded-2xl text-white font-medium"
+            >
+              World's No. 1 Rice
+            </p>
+            <p class="text-white text-2xl pt-5 pl-7">
+              UpTo <span class="font-bold">40% OFF</span>
+            </p>
+          </div>
+          <img src="./assets/offers-2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Grocery News Section -->
+    <section
+      class="bg-[#D9D9D9] h-100 mt-20 flex pt-10 pl-10 pb-10 gap-60 rounded-2xl max-w-375 mx-auto relative -mb-50"
+    >
+      <img class="pl-15" src="./assets/grocery-basket.png" alt="" />
+      <div class="pt-15">
+        <p class="text-4xl font-medium">Get Grocery News!</p>
+        <p class="text-xl pt-4 pb-6">
+          Exclusive training tips, ticks, product deals and more.
+        </p>
+        <input
+          class="bg-white block w-95 h-10 rounded-xl pl-4 mb-6"
+          type="text"
+          placeholder="Grocery@email.com"
+        />
+        <button
+          class="w-37 h-10 text-xl text-white bg-yellow-400 rounded-lg cursor-pointer"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-150 bg-green-700">
+      <div class="max-w-375 mx-auto pt-100 flex justify-between">
+        <div>
+          <img src="./assets/footer-logo.png" alt="" />
+          <p class="text-white w-70 pt-4">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+        <ul>
+          <li class="pb-3">Product</li>
+          <li class="pb-3">Services</li>
+          <li class="pb-3">About Us</li>
+          <li class="pb-3">Contact Us</li>
+        </ul>
+        <div>
+          <p class="text-center">Follow Us</p>
+          <div class="flex justify-center gap-4 pt-4">
+            <img class="h-6" src="./assets/communication.png" alt="" />
+            <img class="h-6" src="./assets/instagram.png" alt="" />
+            <img class="h-6" src="./assets/linkedin.png" alt="" />
+            <img class="h-6" src="./assets/youtube.png" alt="" />
           </div>
         </div>
-     </section>
-
-
-     <!-- Grocery News Section -->
-     <section class="bg-[#D9D9D9] h-100 w-360.5 mt-20 flex p-10 gap-65 rounded-2xl">
-        <img class="pl-15" src="./assets/grocery-basket.png" alt="">
-        <div class="pt-15">
-          <p class="text-4xl font-medium">Get Grocery News!</p>
-          <p class="text-xl pt-4 pb-6">Exclusive training tips, ticks, product deals and more.</p>
-          <input class="bg-white block w-95 h-10 rounded-xl pl-4 mb-6" type="text" placeholder="Grocery@email.com">
-          <button class="w-37 h-10 text-xl text-white bg-yellow-400 rounded-lg cursor-pointer">Subscribe</button>
-        </div>
-     </section>
-
-     
+      </div>
+    </footer>
   </body>
 </html>
