@@ -6,7 +6,21 @@
     <title>Nature's Platter</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="max-w-375 mx-auto">
+    <header class="flex justify-between items-center h-21">
+        <img class="h-14 cursor-pointer" src="./assets/nav-logo.png" alt="">
+        <ul class="flex gap-15 items-center">
+            <li class="cursor-pointer">Product</li>
+            <li class="cursor-pointer">Services</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+
+        <div class="flex justify-between items-center gap-6">
+            <img class="h-6 cursor-pointer" src="./assets/search-interface-symbol.png" alt="">
+            <img class="h-6 cursor-pointer" src="./assets/shopping-cart.png" alt="">
+            <button class="w-17 h-8 border-2 border-yellow-400 cursor-pointer rounded-lg">Login</button>
+            <button class="w-24 h-8 text-white bg-yellow-400 rounded-lg cursor-pointer">Register</button>
+        </div>
+    </header>
 </body>
 </html>
